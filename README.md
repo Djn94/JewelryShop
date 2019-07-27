@@ -1,16 +1,14 @@
 # JewelryShop
 
-## heading level 2 Developers:
+##  Developers:
 Don Newman, Solo Dev
 Github.com/Djn94
 
-### heading level 3 Techstack:
+### Techstack:
 Angular, Sass, Node.JS, Express, MySQL, Sequelize, Inquirer, dotenv.
 
-### heading level 3 Project board:
-Link to your project board on Github - there should be an overview of the features and some user stories assigned to various team members
+### Project board:
+https://github.com/users/Djn94/projects/1
 
 ###mheading level 3 Database Diagram:
-Link to your database diagram (Check out this tool https://dbdiagram.io/d)
-Its ok to screenshot it or share a link from a tool like above
-THE POINT OF THIS IS TO PLAN YOUR DATABASE
+https://dbdiagram.io/d/5d3c760bced98361d6dd0ea8
