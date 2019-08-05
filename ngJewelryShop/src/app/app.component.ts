@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-
+import { PRODUCTS } from "../necklacedb-data";
+import { Product } from "./model/product"
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ngJewelryShop';
+  products = PRODUCTS;
+
 }
