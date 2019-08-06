@@ -1,16 +1,25 @@
 <div class="top-menu">
 
-  <a href="#!">Home</a>
-  <br>
-  <a href="#!">Events</a>
-  <br>
-  <a href="#!">About Me</a>
-  <br>
-  <a href="#!">Shopping Cart</a>
+  <nav-bar>
 
+  </nav-bar>
 </div>
-<div class="products">
+<div class="product-box">
+  <a routerLink="/Necklaces" routerLinkActive="active" class='router-link'>Necklaces</a>
+  <a routerLink="/Bracelets" routerLinkActive="active" class='router-link'>Bracelets</a>
+  <a routerLink="/Earrings" routerLinkActive="active" class='router-link'>Earrings</a>
+
+
+
+  <router-outlet></router-outlet>
   <product-card *ngFor="let product of products; index as i" [product]="product">
 
   </product-card>
+
+
+
+
+
+
+
 </div>

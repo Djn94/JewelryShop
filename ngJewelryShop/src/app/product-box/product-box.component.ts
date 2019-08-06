@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-product-box',
+  selector: 'product-box',
   templateUrl: './product-box.component.html',
   styleUrls: ['./product-box.component.css']
 })

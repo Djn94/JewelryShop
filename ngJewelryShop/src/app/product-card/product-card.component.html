@@ -6,12 +6,14 @@
         {{product.productName}}
     </div>
 
-    <img width="100" alt="product.img" [src]="product.imgUrl">
-
+    <img width="100" alt="product.img" *ngIf="isImageVisible() ; else noImage" [src]=" product.imgUrl">
+    <ng-template #noImage>
+        <p>Image not available</p>
+    </ng-template>
 
     <div class="product-description">
         {{product.description}}
     </div>
 
-
+    <button class="purchase-button">Add to Cart</button>
 </div>

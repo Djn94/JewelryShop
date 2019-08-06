@@ -13,5 +13,8 @@ export class ProductCardComponent implements OnInit {
 
   ngOnInit() {
   }
+  isImageVisible() {
+    return this.product && this.product.imgUrl;
+  }
 
 }
