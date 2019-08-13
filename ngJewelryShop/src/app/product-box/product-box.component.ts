@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Product } from '../product-card/product-card.component';
+import { select, Store } from '@ngrx/store';
+import { GetItems } from '../store/actions';
+
 
 @Component({
   selector: 'product-box',
@@ -7,9 +11,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductBoxComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private store: Store<{ items: Product[]; cart: [] }>) {
+    store.pipe(select('shop')).subscribe(data => (this.items = data.items));
+  }
+  @Input() necklaces: Product[] = [];
+  items: Product[] = [];
   ngOnInit() {
+    this.store.dispatch(new GetItems());
+
   }
 
 }
