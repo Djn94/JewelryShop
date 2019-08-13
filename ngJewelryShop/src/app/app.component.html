@@ -1,0 +1,22 @@
+<div class="top-menu">
+  <app-header></app-header>
+</div>
+<div class="product-box">
+  <a routerLink="/Necklaces" routerLinkActive="active" class='router-link'>Necklaces</a>
+  <a routerLink="/Bracelets" routerLinkActive="active" class='router-link'>Bracelets</a>
+  <a routerLink="/Earrings" routerLinkActive="active" class='router-link'>Earrings</a>
+
+
+
+  <router-outlet></router-outlet>
+  <app-product-card *ngFor="let product of products; index as i" [product]="product">
+
+  </app-product-card>
+
+
+
+
+
+
+
+</div>

@@ -1,0 +1,12 @@
+.products{
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+.product-box{
+    border: solid black 2px;
+    height: 75vh;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 20vh;
+}
